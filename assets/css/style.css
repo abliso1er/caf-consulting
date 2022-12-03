@@ -1,0 +1,49 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Jun-2019, 06:33:03
+    Author     : Abliso Diane
+*/
+
+.hide, .hidden{
+    display: none;
+}
+
+.white{
+    color: white;
+}
+.bg-white{
+    background-color: white;
+}
+
+.navbar-nav li a{
+    position: relative;
+}
+
+.navbar-nav li a:before{
+    content: " ";
+    display: block;
+    background-color: #0033ff;
+    position: absolute;
+    z-index: 9999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 3px;
+}
+
+.navbar-nav li a:hover:before, .navbar-nav li.active a:before{
+    width: 100%;
+    transition: width .5s ease;
+}
+
+.m-auto{
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+}
